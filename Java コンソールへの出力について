@@ -1,0 +1,37 @@
+System.out.print( ~ )        //~を表示するが、改行はしない
+System.out.println( ~ )      //~を表示して改行する
+
+
+例)printによる出力
+    package sample;
+    public class Sample2_3 {
+      public static void main(String[] args) {
+
+        System.out.print("Hello");       //文字列を出力
+        System.out.print(1024);          //数値を出力
+    }
+  }
+
+コンソールの出力では[Hello1024]と出力される。
+→数値はそのまま指定できるが、文字列はダブルクォーテーション("")で囲う。
+
+
+例)printlnによる出力
+    package sample;
+    public class Sample2_4 {
+      public static void main(String[] args) {
+
+        System.out.println("Hello");       //文字列を出力し、改行をする
+        System.out.println(1024);          //数値を出力し、改行する
+    }
+  }
+
+コンソールの出力では以下ように出力される。
+  Hello
+  1024
+→printlnによる出力をする度に改行が行われる。
+
+print/printlnの前についている[System.out.~]の意味
+  →(.)は「〜の中の」という意味で読み取る。
+    =「大枠のSystemというオブジェクト内にあるoutというオブジェクトに含まれるprint/printlnというメソッド」という意味
+      System>out>print/printlnというイメージ。
