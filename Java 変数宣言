@@ -1,1 +1,21 @@
+#Javaのおける変数の宣言
 
+int number;              //int型のnumberという変数を宣言
+double data;             //double型のdataという変数を宣言
+
+→変数の宣言をする場合にはまず「型の種類」をきめ、そこから「変数名」を宣言する。(末尾にはセミコロンを必ずつける)
+
+##Javaの変数の宣言における要点
+
+package sample;
+public class Sample{
+    public static void main(String[] args) {
+      int number;
+      number = 10;
+      number = 20;
+      number = number + 1;
+      System.out.println(number);
+    }
+}
+→13行目で変数を宣言(int型のnumberという変数を宣言)
+ 以下の行は以前の変数について学んだ内容と合致している。
